@@ -1,0 +1,26 @@
+{
+  "name": "key-generator",
+  "version": "1.0.0",
+  "description": "générateur de clé secrete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assadi-dev/key-generator.git"
+  },
+  "author": "Assadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/assadi-dev/key-generator/issues"
+  },
+  "homepage": "https://github.com/assadi-dev/key-generator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "twig": "^1.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
