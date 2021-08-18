@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const crypto = require("crypto");
 const twig = require("twig");
-const bodyParser = require("body-parser");
 
 const app = express();
 
@@ -12,13 +11,8 @@ app.set("twig options", {
   strict_variables: false,
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
-/**
- * app.use(express.json());
- * app.use(express.urlencoded({ extended: true }));
- *
- */
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const generateKey = (param) => {
   let value = parseInt(param);
