@@ -36,6 +36,7 @@ const onGeneratorSubmit = (event) => {
     .then((res) => res.json())
     .then((data) => {
       showKeygen(data.keygen);
+      event.target.digit.value = "";
     })
     .catch((error) => {
       alert("Une erreur est survenue: " + error);
