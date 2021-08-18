@@ -1,0 +1,29 @@
+{% include "template.html.twig" %}
+
+{% block body %}
+	<div class="container py-3">
+		<h1 class="my-3 text-center">Mon Générateur de clé secrete</h1>
+		<div class="row align-items-center justify-content-center p-2">
+			<div class="card text-center border border-primary shadow-0 col-sm-5 col-offset-2">
+				<form id="onGenerateForm">
+					<div class="card-body">
+						<h5 class="card-title">Entrez le nombre d'octet</h5>
+						<div class="form-group">
+							<input type="number" id="digit" name="digit" class="col-sm-2 mx-auto mt-2" required>
+						</div>
+						<div class="card-text my-4" style="min-height:2.5rem">
+							<p id="keyString"></p>
+						</div>
+
+
+						<button type="submit" id="submitBtn" class="btn btn-primary">Générer</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+{% block javascripts %}
+	<script src="../../assets/js/script.js"></script>
+{% endblock %}
