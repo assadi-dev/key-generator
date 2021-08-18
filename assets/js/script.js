@@ -4,7 +4,6 @@ const digit = document.querySelector("#digit");
 const keyString = document.querySelector("#keyString");
 
 const host = window.location.href;
-submitBtn.setAttribute("disabled", true);
 
 const digitValueControl = () => {
   let value = parseInt(digit.value);
@@ -14,6 +13,10 @@ const digitValueControl = () => {
     submitBtn.setAttribute("disabled", true);
   }
 };
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  digitValueControl();
+});
 
 const showKeygen = (arg) => {
   keyString.textContent = arg;
