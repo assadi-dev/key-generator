@@ -2,7 +2,7 @@
  générateur de clé secrete
 
 
-<img src="assets/public/img/picture.png" />
+<img src="assets/public/img/preview.png" />
 
 npm intall,
 puis npm start pour demarrer le serveur.
